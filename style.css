@@ -20,6 +20,7 @@ body {
 }
 
 /* 광고 영역 */
+
 .ad-top {
   background: #fff;
   border-bottom: 1px solid #e2e8f0;
@@ -59,6 +60,10 @@ body {
   color: #64748b;
   font-size: 14px;
   margin: 32px 0;
+}
+
+.adad{
+  display: none;
 }
 
 /* 헤더 */
