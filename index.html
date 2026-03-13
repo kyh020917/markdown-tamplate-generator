@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Template Generator - 노션 & 옵시디언용</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 상단 광고 -->
+  <div class="ad-top">
+    <div class="ad-banner">광고 영역 (728x90)</div>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <div class="logo-icon">✨</div>
+        <div>
+          <h1>Markdown Template Generator</h1>
+          <p>노션 & 옵시디언용 마크다운 템플릿 생성기</p>
+        </div>
+      </div>
+      <a href="https://notion.so" target="_blank" class="notion-link">
+        Notion 열기 ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- 메인 -->
+  <main class="main">
+    <div class="container">
+      <div class="grid">
+        <!-- 왼쪽: 템플릿 선택 -->
+        <div class="left-panel">
+          <!-- 카테고리 필터 -->
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">📚 템플릿 선택</span>
+            </div>
+            <div class="category-filter">
+              <button class="category-btn active" data-category="all">전체</button>
+              <button class="category-btn" data-category="회고">회고</button>
+              <button class="category-btn" data-category="학습">학습</button>
+              <button class="category-btn" data-category="업무">업무</button>
+              <button class="category-btn" data-category="계획">계획</button>
+              <button class="category-btn" data-category="창작">창작</button>
+              <button class="category-btn" data-category="생활">생활</button>
+            </div>
+          </div>
+
+          <!-- 템플릿 목록 -->
+          <div class="card">
+            <div class="template-header">
+              <span id="selected-count">0개 선택됨</span>
+              <button id="select-all-btn" class="text-btn">전체 선택</button>
+            </div>
+            <div id="template-list" class="template-list">
+              <!-- 템플릿 아이템들이 여기에 동적으로 생성됩니다 -->
+            </div>
+          </div>
+
+          <!-- 사이드바 광고 -->
+          <div class="ad-sidebar">광고 영역 (300x250)</div>
+        </div>
+
+        <!-- 오른쪽: 미리보기 -->
+        <div class="right-panel">
+          <div class="card preview-card">
+            <div class="preview-header">
+              <span class="card-title">📝 미리보기</span>
+              <button id="copy-btn" class="copy-btn" disabled>
+                📋 마크다운 복사
+              </button>
+            </div>
+            <div class="preview-content">
+              <pre id="preview-text" class="preview-text">왼쪽에서 템플릿을 선택하면 미리보기가 여기에 표시됩니다</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사용 방법 -->
+      <div class="card usage-card">
+        <h3>✨ 사용 방법</h3>
+        <ol>
+          <li>왼쪽에서 원하는 템플릿을 선택하세요 (여러 개 선택 가능)</li>
+          <li>미리보기를 확인하고 "마크다운 복사" 버튼을 클릭하세요</li>
+          <li>노션이나 옵시디언에 붙여넣기 하세요</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 광고 -->
+  <div class="container">
+    <div class="ad-bottom">광고 영역 (970x250)</div>
+  </div>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2024 Markdown Template Generator. Notion & Obsidian 팬들을 위해 만들었습니다.</p>
+      <div class="footer-links">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
